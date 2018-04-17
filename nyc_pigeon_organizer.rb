@@ -16,16 +16,10 @@ def nyc_pigeon_organizer(data)
       pigeon_list.each do |k2, v2|
         if v1.include?(k2) 
           pigeon_list[k2][key] = [k1.to_s]
-          if key == :color
-            
-            v2[:color] << k1.to_s
-            binding.pry
-          end
         end
       end
     end
   end
-  
   
   pigeon_list
   binding.pry
