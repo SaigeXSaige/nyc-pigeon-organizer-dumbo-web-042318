@@ -21,8 +21,9 @@ def nyc_pigeon_organizer(data)
             binding.pry
           end
         end
+        pigeon_list[k2][key] = color
       end
-      pigeon_list[k2][key] = color
+      
     end
   end
   
