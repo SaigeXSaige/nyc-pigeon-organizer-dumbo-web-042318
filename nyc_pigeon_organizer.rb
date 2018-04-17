@@ -18,7 +18,7 @@ def nyc_pigeon_organizer(data)
           pigeon_list[k2][key] = [k1.to_s]
           if key == :color
             color << k1.to_s
-            binding.pry
+            #binding.pry
           end
         end
         pigeon_list[k2][key] = color
