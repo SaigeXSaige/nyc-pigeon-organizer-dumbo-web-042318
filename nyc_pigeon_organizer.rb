@@ -14,8 +14,11 @@ def nyc_pigeon_organizer(data)
   data.each do |key, value|
     value.each do |k1, v1|
       pigeon_list.each do |k2, v2|
-        if v1.include?(k2) && key != :color
+        if v1.include?(k2) 
           pigeon_list[k2][key] = [k1.to_s]
+          if key == :color
+            pigeon_list[k2][key] = []
+          end
         end
       end
     end
