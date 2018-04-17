@@ -18,9 +18,7 @@ def nyc_pigeon_organizer(data)
           pigeon_list[k2][key] = [k1.to_s]
           
         end
-        pigeon_list[k2][key] = color
       end
-      
     end
   end
   
