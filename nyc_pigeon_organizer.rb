@@ -21,7 +21,13 @@ def nyc_pigeon_organizer(data)
     end
   end
   
-  
+  data[:color].each do |key, value|
+    value.each do |name|
+      if data[:color][key].include?(name)
+        new_pigeon_data[name][:color] << key.to_s
+      end
+    end
+  end
   
   pigeon_list
   binding.pry
